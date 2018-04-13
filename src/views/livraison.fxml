@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="760.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.LivraisonController">
+    <stylesheets>
+        <URL value="@livraison.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="image2" fitHeight="218.0" fitWidth="233.0" layoutX="16.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Content/images.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image3" fitHeight="77.0" fitWidth="360.0" layoutX="413.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Content/téléchargement%20(1).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image1" fitHeight="158.0" fitWidth="775.0" layoutX="-8.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Content/30007735_1646309268786427_466350167_n.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableView1" layoutX="6.0" layoutY="278.0" prefHeight="193.0" prefWidth="746.0">
+        <columns>
+          <TableColumn fx:id="nomproduit" prefWidth="303.0" text="Nom Produit" />
+          <TableColumn fx:id="quantite" minWidth="0.0" prefWidth="197.0" text="Quantité" />
+          <TableColumn fx:id="soustotal" minWidth="0.0" prefWidth="244.0" text="Prix Total" />
+        </columns>
+      </TableView>
+      <Button layoutX="397.0" layoutY="509.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="94.0" text="Annuler" />
+      <Button layoutX="153.0" layoutY="509.0" mnemonicParsing="false" onAction="#makeSuivant" prefHeight="40.0" prefWidth="94.0" text="Suivant" />
+      <ImageView fx:id="tof1" fitHeight="40.0" fitWidth="44.0" layoutX="247.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Content/160_F_33791541_jSGtchjzvMRJ9oqWdIITkSYXKZf2zq0Z.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tof2" fitHeight="44.0" fitWidth="44.0" layoutX="491.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Content/x-17-128.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

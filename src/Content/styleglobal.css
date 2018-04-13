@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 10, 2018, 11:38:49 PM
+    Author     : a7med
+*/
+*{
+    -fx-primary: #77B5FE;
+    -fx-secondary: #DFF2FF;
+    -fx-primarytext: white;
+    -fx-secondarytext:  #F4FEFE;
+    
+}
+.root{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-primarytext;
+}
+.button{
+    -fx-text-fill: -fx-primarytext;
+    
+      -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: -fx-primary;
+}
+.button:pressed {
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+.button:hover{
+     -fx-text-fill: -fx-primary;
+      -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+}
+.label{
+ -fx-text-fill:#83b1c6 ;
+  font-family: arial;
+	font-size: 200px;
+	font-style: italic;
+	font-variant: stylistic;
+	font-weight: 700;
+	line-height: 27.3px;
+
+
+  
+}
+
+.text-field{
+    -fx-background-color:whitesmoke ;
+    -fx-text-fill: black;
+    -jfx-focus-color:-fx-secondary;
+}
+.text-area .content{
+   -fx-background-color:whitesmoke ;
+    -fx-text-fill: -fx-primarytext;
+    -jfx-focus-color:-fx-secondary;
+}
+.table-view{
+   -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -jfx-focus-color:-fx-secondary; 
+}
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color:-fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, whitesmoke;
+}
+.table-view .table-cell{
+    -fx-text-fill: black;
+}
+/*
+.img{
+    -fx-background-color: #ffff8D;
+}
+*/
+
+.text-area{
+     -fx-background-color:whitesmoke ;
+    -fx-text-fill: black;
+    -jfx-focus-color:-fx-secondary;
+    
+}
+.tabPane{
+    -fx-background-color:whitesmoke ;
+    -fx-text-fill:whitesmoke;
+}
+

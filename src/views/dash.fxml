@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="711.0" prefWidth="877.0" stylesheets="@../Content/style.css" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DashController">
+   <children>
+      <HBox fx:id="boxMenus" layoutX="25.0" layoutY="142.0" prefHeight="214.0" prefWidth="694.0" spacing="20.0">
+         <children>
+            <AnchorPane fx:id="paneUsers" onMouseClicked="#selectDep" prefHeight="214.0" prefWidth="132.0" styleClass="menus">
+               <children>
+                  <Label alignment="CENTER" layoutX="32.0" layoutY="122.0" text="Départements" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage users,add,edit,delete and user logs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="100.0" layoutX="49.0" layoutY="14.0" onMouseClicked="#DepClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Driver-WF.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneTickets" onMouseClicked="#selectServ" prefHeight="209.0" prefWidth="189.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="120.0" prefHeight="30.0" prefWidth="100.0" text="Services" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage tickets: Book,View,revoke,administer" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="100.0" layoutX="57.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Ticket.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <styleClass>
+                  <String fx:value="menus" />
+                  <String fx:value="arrow-button" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane fx:id="paneDrivers" onMouseClicked="#switchToDrivers" prefHeight="214.0" prefWidth="154.0" styleClass="menus">
+               <children>
+                  <Label alignment="CENTER" layoutX="22.0" layoutY="157.0" prefHeight="51.0" prefWidth="171.0" text="Manage Drivers:,add,edit,delete and user logs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="57.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/User%20Settings-02-WF.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="48.0" layoutY="121.0" text="Utilisateurs" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneUsers1" onMouseClicked="#switchToUsers" prefHeight="214.0" prefWidth="132.0" styleClass="menus">
+               <children>
+                  <Label fx:id="Ser" alignment="CENTER" layoutX="55.0" layoutY="124.0" text="Boutique" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage users,add,edit,delete and user logs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="100.0" layoutX="49.0" layoutY="14.0" onMouseClicked="#DepClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Driver-WF.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <StackPane fx:id="fabsContainer" layoutX="751.0" layoutY="389.0" prefHeight="100.0" prefWidth="45.0" />
+      <HBox fx:id="boxMenus1" layoutX="31.0" layoutY="451.0" prefHeight="214.0" prefWidth="611.0" spacing="20.0">
+         <children>
+            <AnchorPane fx:id="paneTickets1" onMouseClicked="#switchToTickets" prefHeight="214.0" prefWidth="160.0" styleClass="menus">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="45.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Ticket.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="37.0" layoutY="133.0" prefHeight="30.0" prefWidth="115.0" text="Evenements" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage tickets: Book,View,revoke,administer" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneBuses1" onMouseClicked="#switchToBuses" prefHeight="227.0" prefWidth="167.0" styleClass="menus">
+               <children>
+                  <Label alignment="CENTER" layoutX="36.0" layoutY="133.0" text="Réclamations" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage buses: movements ,routes,drivers,licences" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="110.0" fitWidth="100.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Driver-WF.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneDrivers11" onMouseClicked="#switchToDrivers" prefHeight="214.0" prefWidth="232.0" styleClass="menus">
+               <children>
+                  <Label alignment="CENTER" layoutX="39.0" layoutY="133.0" text="Rendez_vous" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage Drivers:,add,edit,delete and user logs" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Van-02-WF.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneTickets11" onMouseClicked="#switchToTickets" prefHeight="214.0" prefWidth="144.0" styleClass="menus">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="45.0" layoutY="14.0" onMouseClicked="#selectCons" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Content/Ticket.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="37.0" layoutY="133.0" prefHeight="30.0" prefWidth="115.0" text="Conseils" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="18.0" layoutY="163.0" prefHeight="51.0" prefWidth="171.0" text="Manage tickets: Book,View,revoke,administer" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="Roboto Medium" size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00aacf" height="77.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="877.0" />
+      <Label layoutX="14.0" layoutY="18.0" prefHeight="42.0" prefWidth="538.0" text="Système de gestion de Centre SANTI" textAlignment="CENTER" textFill="#ffffff8a">
+         <font>
+            <Font name="Roboto Medium" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="737.0" layoutY="14.0" prefHeight="51.0" prefWidth="118.0" onAction="#deconnexion" stylesheets="@../../../../../Desktop/disgn/Dashboard/src/dashboard/main/stylesheet.css" text="Déconnexion" textFill="WHITE" />
+   </children>
+</AnchorPane>
